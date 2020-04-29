@@ -14,6 +14,7 @@
     <div id="app"></div>
 
     <script type="text/babel">
+        //App osztálynév nem kötelező, a div id-re utal
         class App extends React.Component {
             state = {
                 name: 'Jancsi',
@@ -34,7 +35,7 @@
             handleCopy(e) {
                 ////legjobb cucc, megvéd a lopás ellen
                 e.preventDefault();
-                alert('Lopós cigány!');
+                alert('Lopós!');
             }
             render() {
                 return (
