@@ -1,0 +1,26 @@
+komponens gondolkodásmód
+a komponenseket js rendereli le a React segítségével
+a render JSX-et használ amit a Babel.js képes megjeleníteni
+komponens állapotok (adat, UI állapot)
+    -> a modal nyitva van vagy csukva
+    -> a kiírt adat éppen mit jelenít meg
+
+pl.: { //js object
+    itmes:[ //array
+        {name: 'nadrág', price: '5000'}, //object
+        {name: 'poló'. price: '2000'}
+        //ha hozzáadok még egy adatot az állapotváltozás
+    ]
+}
+
+pl.: 
+{
+    showPopup: true
+}
+
+vagy
+
+{
+    showPopup: false
+}
+
