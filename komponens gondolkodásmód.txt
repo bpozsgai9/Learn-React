@@ -24,3 +24,10 @@ vagy
     showPopup: false
 }
 
+///////////////////////////////////////////////////////
+CREATE APP
+
+node -v //node verzió lekérése, npx miatt
+npx create-react-app nev
+cd nev
+npm start
