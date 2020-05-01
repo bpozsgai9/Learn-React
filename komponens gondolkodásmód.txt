@@ -31,3 +31,30 @@ node -v //node verzió lekérése, npx miatt
 npx create-react-app nev
 cd nev
 npm start
+
+react->
+single page app
+
+normál weboldal->
+multi page app/site
+
+
+- a react app komponenseket tartalmaz, nem küld a szervernek feltétlenül requestet
+
+- a single page app-oknál mindig van egy root component
+amiből ágaznak le a sima komponensek
+- a hierarchia alján felülre mutató kapcsolatot nested componentnek
+ (beágyazott komponens) hívjuk
+
+komponens
+új fájl
+import React, {Component} from 'react';
+class Nev extends Component
+render függvény
+export
+
+amikor meghívom
+import Nev from './sajatHely';
+<Nev />
+
+
