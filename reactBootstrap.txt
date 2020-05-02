@@ -1,0 +1,37 @@
+import React from 'react';
+//bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card'
+import ListGroup from 'react-bootstrap/ListGroup'
+
+const Ninjas = ( { ninjas, deleteNinja } ) => {
+
+    const ninjaList = ninjas
+    .filter(ninja => ninja.age > 20)
+    .map(ninja => {
+        return (
+            <div>
+                <Card style={{ width: '18rem' }} 
+                className="Ninja" key={ ninja.id }>
+                    <ListGroup variant="flush">
+                        <ListGroup.Item>Name: { ninja.name }</ListGroup.Item>
+                        <ListGroup.Item>Age: { ninja.age }</ListGroup.Item>
+                        <ListGroup.Item>Belt: { ninja.belt }</ListGroup.Item>
+                    </ListGroup>
+                    <Button variant="danger"
+                    onClick={ () => { deleteNinja(ninja.id) } }>Törlés</Button>
+                </Card>
+                <br />
+            </div>
+        )
+    });
+
+    return (
+        <div className="ninja-list">
+            { ninjaList }
+        </div>
+    )
+}
+
+export default Ninjas;
